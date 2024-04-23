@@ -79,15 +79,6 @@
     };
 
     behaviors {
-        Shift_Enter: Shift_Enter {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_ENTER";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <34>;
-            tapping-term-ms = <100>;
-        };
         td_num: num_layer_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -146,6 +137,7 @@
         f_mt: fast_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             tapping-term-ms = <200>;
+            #binding-cells = <2>;
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
