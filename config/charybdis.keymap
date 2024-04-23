@@ -54,7 +54,7 @@
         MidClickRight{
             bindings = <&mkp MCLK>;
             key-positions = <15 25>;
-        }
+        };
 
        combo_esc {
           timeout-ms = <30>;
