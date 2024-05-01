@@ -50,31 +50,37 @@
         compatible = "zmk,combos";
 
         LeftClickRight {
+            timeout-ms = <30>;
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
         };
 
         RightClickRight {
+            timeout-ms = <30>;
             bindings = <&mkp RCLK>;
             key-positions = <26 27>;
         };
 
         MidClickRight{
+            timeout-ms = <30>;
             bindings = <&mkp MCLK>;
             key-positions = <16 17 18>;
         };
 
         LeftClickLeft {
+            timeout-ms = <30>;
             bindings = <&mkp LCLK>;
             key-positions = <12 13>;
         };
 
         RightClickLeft {
+            timeout-ms = <30>;
             bindings = <&mkp RCLK>;
             key-positions = <22 23>;
         };
 
         MidClickLeft{
+            timeout-ms = <30>;
             bindings = <&mkp MCLK>;
             key-positions = <11 12 13>;
         };
@@ -191,9 +197,9 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &lt ADJ Q     &kp W          &kp F         &kp P        &kp B           &kp J       &kp L        &kp U         &kp Y          &lt ADJ SEMI
-                &hm_l LALT A  &hm_l LCTRL R  &hm_l LSHFT S &hm_l LGUI T &kp G           &kp M       &hm_r RGUI N &hm_r RSHFT E &hm_r RCTRL I  &hm_r RALT O
-                HYPR_M(Z)     &kp X          &kp C         &hl_l SCR D  &kp V           &kp K       &hl_r SCR H  &kp COMMA     &kp DOT        MEH_M(FSLH)  
+                &lt ADJ Q     &kp W          &kp F         &kp P        &kp B           &kp J       &kp L        &kp U             &kp Y          &lt ADJ SEMI
+                &hm_l LALT A  &hm_l LCTRL R  &hm_l LSHFT S &hm_l LGUI T &kp G           &kp M       &hm_r RGUI N &hm_r RSHFT E     &hm_r RCTRL I  &hm_r RALT O
+                HYPR_M(Z)     &kp X          &kp C         &hl_l SCR D  &kp V           &kp K       &hl_r SCR H  &hl_r NAV COMMA   &kp DOT        MEH_M(FSLH)  
                                         &td_sym     &hl_l NAV SPACE   &kp RET           &td_num     &f_mt LSHFT BSPC
                         >;
                 };
