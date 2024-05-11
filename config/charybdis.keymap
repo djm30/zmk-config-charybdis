@@ -11,6 +11,7 @@
 #define NUM  3
 #define ADJ  4
 #define SCR  5
+#define FUN  6
 
 #define MO_SL(layer) &mo_sl layer layer
 #define HYPR &kp LC(LG(LS(LALT))) 
@@ -197,7 +198,7 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &lt ADJ Q     &kp W          &kp F         &kp P        &kp B           &kp J       &kp L        &kp U             &kp Y          &lt ADJ SEMI
+                &lt ADJ Q     &kp W          &kp F         &kp P        &kp B           &kp J       &kp L        &kp U             &kp Y          &lt FUN SEMI
                 &hm_l LALT A  &hm_l LCTRL R  &hm_l LSHFT S &hm_l LGUI T &kp G           &kp M       &hm_r RGUI N &hm_r RSHFT E     &hm_r RCTRL I  &hm_r RALT O
                 HYPR_M(Z)     &kp X          &kp C         &hl_l SCR D  &kp V           &kp K       &hl_r SCR H  &hl_r NAV COMMA   &kp DOT        MEH_M(FSLH)  
                                         &td_sym     &hl_l NAV SPACE   &kp RET           &td_num     &f_mt LSHFT BSPC
@@ -212,23 +213,24 @@ label= "BASE"                              ;
 label= "NAV"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃    F7     ┃     F8    ┃    F9     ┃    F12    ┃   ┃   MUTE    ┃  V DOWN   ┃    V UP   ┃   PLAY    ┃   SCNSHT  ┃
+//             ┃           ┃    MUTE   ┃   V DOWN  ┃   V UP    ┃   PLAY    ┃   ┃   HOME    ┃   P DOWN  ┃    P UP   ┃    END    ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃    F4     ┃     F5    ┃    F6     ┃    F11    ┃   ┃   LEFT    ┃   DOWN    ┃     UP    ┃   RIGHT   ┃           ┃
+//             ┃           ┃  1 PASS   ┃   SCNSHT  ┃   SCNREC  ┃           ┃   ┃   LEFT    ┃   DOWN    ┃     UP    ┃   RIGHT   ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃    F1     ┃     F2    ┃    F3     ┃    F10    ┃   ┃   HOME    ┃  P DOWN   ┃    P UP   ┃    END    ┃           ┃
+//             ┃           ┃           ┃    COPY   ┃           ┃   PASTE   ┃   ┃   BACK    ┃  P TAB    ┃    N TAB  ┃    FOR    ┃           ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃    SYM    ┃           ┃   ENTER   ┃   ┃    NUM    ┃    BSPC   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans      &kp F7      &kp F8      &kp F9      &kp F12         &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp C_PP    &kp LS(LG(NUMBER_4))
-                &trans      &kp F4      &kp F5      &kp F6      &kp F11         &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT   &trans
-                &trans      &kp F1      &kp F2      &kp F3      &kp F10         &kp HOME    &kp PG_DN      &kp PG_UP      &kp END     &trans    
-                                        &td_sym     &hl_l NAV SPACE   &kp RET   &td_num     &f_mt LSHFT BSPC
+                &none      &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP                  &kp HOME      &kp PG_DN      &kp PG_UP      &kp END       &none
+                &none      &kp LG(LS(SPACE))  &kp LS(LG(NUMBER_4))   &kp LG(LS(NUMBER_5))      &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT     &none
+                &none      &none        &kp LG(C)      &none         &kp LG(V)                 &kp LG(LBKT)  &kp LG(LBRC)   &kp LG(RBRC)   &kp LG(RBKT)  &none
+                                        &td_sym     &hl_l NAV SPACE   &kp RET                  &td_num       &f_mt LSHFT BSPC
                         >;
                 };
+
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
@@ -318,5 +320,28 @@ label= "ADJ"                               ;
                   &trans  &trans  &trans    &trans  &trans
             >;
         };
+
+                fun_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "FUN"                               ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+//             ┃           ┃    F7     ┃     F8    ┃    F9     ┃    F12    ┃   ┃           ┃    OPT    ┃           ┃           ┃           ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃           ┃    F4     ┃     F5    ┃    F6     ┃    F11    ┃   ┃           ┃    CMD    ┃   SHFT    ┃    CTRL   ┃    OPT    ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃           ┃    F1     ┃     F2    ┃    F3     ┃    F10    ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃
+//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
+ bindings = <
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+
+                &trans      &kp F7      &kp F8      &kp F9      &kp F12       &trans   &kp LALT  &trans     &trans     &trans
+                &trans      &kp F4      &kp F5      &kp F6      &kp F11       &trans   &kp LGUI  &kp LSHFT  &kp LCTRL  &kp LALT  
+                &trans      &kp F1      &kp F2      &kp F3      &kp F10       &trans   &trans    &trans     &trans     &trans
+                                        &trans      &trans      &trans        &trans  &trans  &trans
+                        >;
+                };
     };
 };
