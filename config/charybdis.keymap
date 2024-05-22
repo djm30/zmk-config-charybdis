@@ -224,10 +224,10 @@ label= "NAV"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none      &kp C_MUTE          &kp C_VOL_DN  &kp C_VOL_UP         &kp C_PP                  &kp HOME      &kp PG_DN      &kp PG_UP      &kp END       &none
-                &none      &kp LG(LS(SPACE))   &kp LS(TAB)   &kp TAB              &kp LS(LG(NUMBER_4))      &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT     &none
-                &kp LCTRL  &kp LGUI            &kp LG(C)     &kp LG(LS(NUMBER_5)) &kp LG(V)                 &kp LG(LBKT)  &kp LG(LBRC)   &kp LG(RBRC)   &kp LG(RBKT)  &none
-                                               &td_sym       &hl_l NAV SPACE      &kp RET                   &td_num       &f_mt LSHFT BSPC
+                &none      &kp C_MUTE                  &kp C_VOL_DN              &kp C_VOL_UP         &kp C_PP                  &kp HOME      &kp PG_DN      &kp PG_UP      &kp END       &none
+                &kp LALT   &hm_l LCTRL LG(LS(SPACE))   &hm_l LSHFT LS(TAB)       &hm_l LGUI TAB       &kp LS(LG(NUMBER_4))      &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT     &none
+                &kp LCTRL  &kp LGUI                    &kp LG(C)                 &kp LG(LS(NUMBER_5)) &kp LG(V)                 &kp LG(LBKT)  &kp LG(LBRC)   &kp LG(RBRC)   &kp LG(RBKT)  &none
+                                               &td_sym       &hl_l NAV SPACE     &kp RET                   &td_num       &f_mt LSHFT BSPC
                         >;
                 };
 
