@@ -50,53 +50,53 @@
     combos {
         compatible = "zmk,combos";
 
-        LeftClickRight {
-            timeout-ms = <30>;
-            bindings = <&mkp LCLK>;
-            key-positions = <16 17>;
-        };
-
-        RightClickRight {
-            timeout-ms = <30>;
-            bindings = <&mkp RCLK>;
-            key-positions = <26 27>;
-        };
-
-        MidClickRight{
-            timeout-ms = <30>;
-            bindings = <&mkp MCLK>;
-            key-positions = <16 17 18>;
-        };
-
-        LeftClickLeft {
-            timeout-ms = <30>;
-            bindings = <&mkp LCLK>;
-            key-positions = <12 13>;
-        };
-
-        RightClickLeft {
-            timeout-ms = <30>;
-            bindings = <&mkp RCLK>;
-            key-positions = <22 23>;
-        };
-
-        MidClickLeft{
-            timeout-ms = <30>;
-            bindings = <&mkp MCLK>;
-            key-positions = <11 12 13>;
-        };
-
-       combo_esc {
-          timeout-ms = <30>;
-          key-positions = <11 12>;
-          bindings = <&kp ESC>; 
-        };
-
-      combo_tab {
-          timeout-ms = <30>;
-          key-positions = <17 18>;
-          bindings = <&kp TAB>;
-        };
+      #   LeftClickRight {
+      #       timeout-ms = <30>;
+      #       bindings = <&mkp LCLK>;
+      #       key-positions = <16 17>;
+      #   };
+      #
+      #   RightClickRight {
+      #       timeout-ms = <30>;
+      #       bindings = <&mkp RCLK>;
+      #       key-positions = <26 27>;
+      #   };
+      #
+      #   MidClickRight{
+      #       timeout-ms = <30>;
+      #       bindings = <&mkp MCLK>;
+      #       key-positions = <16 17 18>;
+      #   };
+      #
+      #   LeftClickLeft {
+      #       timeout-ms = <30>;
+      #       bindings = <&mkp LCLK>;
+      #       key-positions = <12 13>;
+      #   };
+      #
+      #   RightClickLeft {
+      #       timeout-ms = <30>;
+      #       bindings = <&mkp RCLK>;
+      #       key-positions = <22 23>;
+      #   };
+      #
+      #   MidClickLeft{
+      #       timeout-ms = <30>;
+      #       bindings = <&mkp MCLK>;
+      #       key-positions = <11 12 13>;
+      #   };
+      #
+      #  combo_esc {
+      #     timeout-ms = <30>;
+      #     key-positions = <11 12>;
+      #     bindings = <&kp ESC>; 
+      #   };
+      #
+      # combo_tab {
+      #     timeout-ms = <30>;
+      #     key-positions = <17 18>;
+      #     bindings = <&kp TAB>;
+      #   };
 
 
     };
@@ -193,7 +193,7 @@ label= "BASE"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    SYM    ┃    SPC    ┃   ENTER   ┃   ┃    NUM    ┃    BSPC   ┃
+//                                     ┃   NONE    ┃    SPC    ┃    SYM    ┃   ┃    NUM    ┃    BSPC   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -201,7 +201,7 @@ label= "BASE"                              ;
                 &lt ADJ Q     &kp W          &kp F         &kp P        &kp B           &kp J       &kp L        &kp U             &kp Y          &lt FUN SEMI
                 &hm_l LALT A  &hm_l LCTRL R  &hm_l LSHFT S &hm_l LGUI T &kp G           &kp M       &hm_r RGUI N &hm_r RSHFT E     &hm_r RCTRL I  &hm_r RALT O
                 HYPR_M(Z)     &kp X          &kp C         &hl_l SCR D  &kp V           &kp K       &hl_r SCR H  &hl_r NAV COMMA   &kp DOT        MEH_M(FSLH)  
-                                        &td_sym     &hl_l NAV SPACE   &kp RET           &td_num     &f_mt LSHFT BSPC
+                                        &none     &hl_l NAV SPACE   &td_sym           &td_num     &f_mt LSHFT BSPC
                         >;
                 };
 
@@ -213,21 +213,21 @@ label= "BASE"                              ;
 label= "NAV"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃    MUTE   ┃   V DOWN  ┃   V UP    ┃   PLAY    ┃   ┃   HOME    ┃   P DOWN  ┃    P UP   ┃    END    ┃           ┃
+//             ┃    TAB    ┃    MUTE   ┃   V DOWN  ┃   V UP    ┃   PLAY    ┃   ┃   HOME    ┃   P DOWN  ┃    P UP   ┃    END    ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃  1 PASS   ┃   S TAB   ┃    TAB    ┃  SCNSHT   ┃   ┃   LEFT    ┃   DOWN    ┃     UP    ┃   RIGHT   ┃           ┃
+//             ┃    ESC    ┃    MCLK   ┃    RCLK   ┃    LCLK   ┃   ENTER   ┃   ┃   LEFT    ┃   DOWN    ┃     UP    ┃   RIGHT   ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    CTRL   ┃    CMD    ┃    COPY   ┃   SCNREC  ┃   PASTE   ┃   ┃   BACK    ┃  P TAB    ┃    N TAB  ┃    FOR    ┃           ┃
+//             ┃   SCNREC  ┃    CUT    ┃    COPY   ┃   SCNSHT  ┃   PASTE   ┃   ┃   BACK    ┃  P TAB    ┃    N TAB  ┃    FOR    ┃           ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃    SYM    ┃           ┃   ENTER   ┃   ┃    NUM    ┃    BSPC   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none      &kp C_MUTE                  &kp C_VOL_DN              &kp C_VOL_UP         &kp C_PP                  &kp HOME      &kp PG_DN      &kp PG_UP      &kp END       &none
-                &kp LALT   &hm_l LCTRL LG(LS(SPACE))   &hm_l LSHFT LS(TAB)       &hm_l LGUI TAB       &kp LS(LG(NUMBER_4))      &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT     &none
-                &kp LCTRL  &kp LGUI                    &kp LG(C)                 &kp LG(LS(NUMBER_5)) &kp LG(V)                 &kp LG(LBKT)  &kp LG(LBRC)   &kp LG(RBRC)   &kp LG(RBKT)  &none
-                                               &td_sym       &hl_l NAV SPACE     &kp RET                   &td_num       &f_mt LSHFT BSPC
+                &kp TAB               &kp C_MUTE     &kp C_VOL_DN   &kp C_VOL_UP         &kp C_PP         &kp HOME      &kp PG_DN      &kp PG_UP      &kp END       &none
+                &kp ESC               &mkp MCLK      &mkp MCLK      &mkp MCLK            &kp RET          &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT     &none
+                &kp LG(LS(NUMBER_5))  &kp LG(X)      &kp LG(C)      &kp LS(LG(NUMBER_4)) &kp LG(V)        &kp LG(LBKT)  &kp LG(LBRC)   &kp LG(RBRC)   &kp LG(RBKT)  &none
+                                               &td_sym       &hl_l NAV SPACE     &kp RET                  &td_num       &f_mt LSHFT BSPC
                         >;
                 };
 
