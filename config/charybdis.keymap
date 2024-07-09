@@ -47,59 +47,6 @@
    */
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-      #   LeftClickRight {
-      #       timeout-ms = <30>;
-      #       bindings = <&mkp LCLK>;
-      #       key-positions = <16 17>;
-      #   };
-      #
-      #   RightClickRight {
-      #       timeout-ms = <30>;
-      #       bindings = <&mkp RCLK>;
-      #       key-positions = <26 27>;
-      #   };
-      #
-      #   MidClickRight{
-      #       timeout-ms = <30>;
-      #       bindings = <&mkp MCLK>;
-      #       key-positions = <16 17 18>;
-      #   };
-      #
-      #   LeftClickLeft {
-      #       timeout-ms = <30>;
-      #       bindings = <&mkp LCLK>;
-      #       key-positions = <12 13>;
-      #   };
-      #
-      #   RightClickLeft {
-      #       timeout-ms = <30>;
-      #       bindings = <&mkp RCLK>;
-      #       key-positions = <22 23>;
-      #   };
-      #
-      #   MidClickLeft{
-      #       timeout-ms = <30>;
-      #       bindings = <&mkp MCLK>;
-      #       key-positions = <11 12 13>;
-      #   };
-      #
-      #  combo_esc {
-      #     timeout-ms = <30>;
-      #     key-positions = <11 12>;
-      #     bindings = <&kp ESC>; 
-      #   };
-      #
-      # combo_tab {
-      #     timeout-ms = <30>;
-      #     key-positions = <17 18>;
-      #     bindings = <&kp TAB>;
-      #   };
-
-
-    };
 
     behaviors {
         td_num: num_layer_dance {
