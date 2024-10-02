@@ -300,7 +300,7 @@ label= "BASE"                              ;
                 &key_repeat   &lt ADJ W      &kp F         &kp P        &kp B           &kp J       &kp L          &kp U         &kp Y          &lt FUN SEMI
                 &hm LALT A    &hm LCTRL R    &hm LSHFT S   &hm LGUI T   &kp G           &kp M       &hm RGUI N     &hm RSHFT E   &hm RCTRL I    &hm RALT O
                 HYPR(Z)       &kp X          &kp C         &kp D        &kp V           &kp K       &kp H          &kp COMMA     &kp DOT        MEH(FSLH)             
-                                             &none         &kp SPACE    &td_num         &td_sym     &td_nav   &none
+                                             &none         &kp SPACE    &num_word NUM   &td_sym     &td_nav   &none
                         >;
                 };
 
@@ -326,7 +326,7 @@ label= "NAV"                               ;
                 &none    &none        &none           &none         &none               &kp HOME      &kp PG_DN      &kp PG_UP      &kp END       &none 
                 &to NAV  &mkp MCLK    &mkp RCLK       &mkp LCLK     &none               &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT     &none
                 &none    &none        &kp LC(LEFT)    &kp LC(RIGHT) &none               &kp LG(LBKT)  &kp LG(LBRC)   &kp LG(RBRC)   &kp LG(RBKT)  &none   
-                                             &none         &to BASE    &td_num          &sk LSHFT     &to BASE 
+                                      &none        &to BASE     &num_word NUM           &sk LSHFT     &to BASE 
                         >;
                 };
 
@@ -346,9 +346,9 @@ label= "MAC"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none                 &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP         &none                  &none      &kp PG_DN      &kp PG_UP      &kp END       &none 
-                &none                 &none        &none         &none                &none                  &none      &none          &none     &none     &none
-                &kp LG(LS(NUMBER_5))  &kp LG(X)    &kp LG(C)     &kp LG(LS(NUMBER_4)) &kp LG(V)                 &kp LG(LBKT)  &kp LG(LBRC)   &kp LG(RBRC)   &kp LG(RBKT)  &none        
+                &none                 &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP         &none                  &none         &kp PG_DN      &kp PG_UP      &kp END       &none 
+                &none                 &none        &none         &none                &none                  &none         &none          &none          &none         &none
+                &kp LG(LS(NUMBER_5))  &kp LG(X)    &kp LG(C)     &kp LG(LS(NUMBER_4)) &kp LG(V)              &kp LG(LBKT)  &kp LG(LBRC)   &kp LG(RBRC)   &kp LG(RBKT)  &none        
                                         &trans      &trans      &trans          &trans      &trans         
                         >;
                 };
@@ -374,7 +374,7 @@ label= "SYM"                               ;
                 &none       &DB MINUS       &DB PLUS    &DB EQUAL   &none                 &none       &DB AMPS    &DB PIPE    &none       &none       
                 &kp COLON   &kp MINUS       &kp PLUS    &kp EQUAL   &kp STAR              &kp EXCL    &ARROW      &kp DLLR    &kp PIPE    &kp SEMI       
                 &none       &kp LT          &kp GT      &kp AMPS    &kp LA(NUMBER_3)      &kp UNDER   &kp PRCNT   &kp CARET   &kp FSLH    &kp QMARK        
-                                            &none       &kp SPACE   &td_num               &to BASE     &nav LSHFT NAV    
+                                            &none       &kp SPACE   &num_word NUM         &to BASE     &nav LSHFT NAV    
                         >;
                 };
 
@@ -398,8 +398,8 @@ label= "NUM"                               ;
 
                 &none                  &none              &kp LS(NUMBER_3)   &none              &none                 &none           &none              &none             &none              &none
                 &hm LALT KP_N1         &hm LCTRL KP_N2    &hm LSHFT KP_N3    &hm LGUI KP_N4     &kp KP_N5             &kp KP_N6       &hm RGUI KP_N7     &hm RSHFT KP_N8   &hm RCTRL KP_N9    &hm RALT KP_N0
-                &kp TILDE              &none              &none              &none              &none                 &kp AT      &kp BSLH       &kp COMMA    &kp DOT      &kp FSLH            
-                                             &none        &kp SPACE          &to BASE                                 &td_sym     &nav LSHFT NAV     
+                &kp TILDE              &none              &none              &none              &none                 &kp AT          &kp BSLH           &kp COMMA         &kp DOT            &kp FSLH            
+                                                          &none              &kp SPACE          &to BASE              &td_sym         &nav LSHFT NAV     
                         >;
                 };
 
@@ -426,7 +426,7 @@ label= "ADJ"                               ;
                 &none       &bt BT_CLR  &out OUT_BLE    &sys_reset    &trans          &trans          &trans          &trans          &sys_reset      &trans
                 &trans      &bt BT_NXT  &out OUT_TOG    &bt BT_CLR    &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4 
                 &trans      &bt BT_PRV  &trans          &bootloader   &trans          &trans          &trans          &trans          &trans          &trans                   
-                                        &to BASE      &to BASE      &to BASE          &to BASE      &to BASE      
+                                        &to BASE        &to BASE      &to BASE        &to BASE        &to BASE      
                         >;
                 };
 
